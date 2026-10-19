@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AMA — Jhay-Em</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=Press+Start+2P&family=Pixelify+Sans:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<!-- HOW THIS WORKS: every slide is a question coworkers might ask (the big text on the left)
+     with your answer on the right. Each "Next" press reveals the next piece (items with data-step="N").
+     PROFILE PHOTO: replace src="photos/profile.jpg" (first slide, last slide and the small avatars). -->
+<body>
+
+<div class="bg"><i class="blob b1"></i><i class="blob b2"></i><div class="grid"></div><div id="particles"></div></div>
+
+<main id="deck">
+
+  <!-- 01 OPENER -->
+  <section class="slide active" id="s1">
+    <div class="hero">
+      <div>
+        <p class="kicker rv">WORK AMA · OPEN FLOOR</p>
+        <h1 class="huge rv" style="--i:1">ASK ME ANYTHING.</h1>
+        <h2 class="name rv sc" style="--i:3">Jhay-Em Calleja</h2> <!-- EDIT: your name -->
+        <p class="sub rv" style="--i:4">Nickname: Jem, Jae, Em</p>
+        <!-- The line below types out the questions from the next slides automatically -->
+        <p class="prompt rv" style="--i:5"><span class="pl">?</span><span id="typing"></span><i class="caret"></i></p>
+        <p class="quote rv" style="--i:6">“I'm probably not the most interesting person in the room... but I have a few things worth sharing.”</p>
+        <button class="cta rv" style="--i:7" data-next>START →</button>
+      </div>
+      <div class="pwrap rv sc" style="--i:5"><div class="portrait"><!-- Replace with your own profile photo --><img src="photos/profile.jpg" alt="Profile photo" onerror="this.remove()"></div></div>
+    </div>
+  </section>
+
+  <!-- 02 Q1: WHAT DID YOU STUDY -->
+  <section class="slide" id="s2"><div class="qa">
+    <div class="qside">
+      <span class="qtag rv">Q1</span>
+      <h2 class="question rv" style="--i:1">So... what did you actually study?</h2>
+    </div>
+    <div class="answer rv" style="--i:2">
+      <div class="ahead"><span class="av"><img src="photos/profile.jpg" alt="" onerror="this.remove()">J</span><div><b>Jhay-Em</b><br>answering</div></div>
+      <!-- EDIT: course, school and years -->
+      <div class="degree"><h3>Bachelor of Science in INFORMATION TECHNOLOGY</h3><p>Pamantasan ng Lungsod ng Muntinlupa · <em>2022 — 2026</em></p></div>
+      <!-- EDIT: timeline. Each row = a bold label (<b>) + a short text (<small>). Keep data-step numbers in order. -->
+      <div class="tl">
+        <div class="ms sr" data-step="1"><b>2022</b><small>Started BSIT</small></div>
+        <div class="ms sr" data-step="2"><small>McDonald's</small></div>
+        <div class="ms proj cap sr" data-step="3"><b>2026</b><small>IT Graduate</small></div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- 03 Q2: WHAT HAVE YOU BUILT (list on the left, details on the right; each Next opens the next project) -->
+  <section class="slide" id="s4"><div class="built">
+    <div>
+      <span class="qtag rv">Q2</span>
+      <h2 class="question sm rv" style="--i:1">What have you actually built?</h2>
+      <p class="asker rv" style="--i:2">“A few projects, a lot of learning.”</p>
+      <!-- EDIT each project: title, type, short text and the detail bullets.
+           REPLACE WITH YOUR ACTUAL SCREENSHOT as the cover: delete the class "pixel"/"dash"/"pay"/"nav" on the .vis div and add style="--img:url(photos/projects/cover.png)".
+           ADD MORE SCREENSHOTS inside .shots (each Next shows the next one):
+           <span style="--img:url(photos/projects/ANY-NAME.png)"></span> -->
+      <div class="cards">
+        <div class="card rv" style="--i:3">
+          <div class="vis pixel" style="--img:url(photos/projects/pamana.png)"></div><span class="num">01</span>
+          <h3>PAMANA QUEST</h3><em>2D Historical RPG · Capstone</em>
+          <p>A 2D pixel-art RPG about Philippine history and culture.</p>
+          <ul class="detail"><li>Role: Graphics &amp; asset designer, assistant developer</li><li>Built with: Godot 4.4 · GDScript</li></ul>
+          <div class="shots"></div>
+        </div>
+        <div class="card rv" style="--i:4">
+          <div class="vis dash" style="--img:url(photos/projects/rfes.png)"></div><span class="num">02</span>
+          <h3>ROOM &amp; EQUIPMENT MONITORING SYSTEM</h3><em>Desktop Management System</em>
+          <p>Tracks rooms, equipment, maintenance and losses.</p>
+          <ul class="detail"><li>Role: Full-stack developer</li><li>Built with: C# · .NET · MySQL</li></ul>
+          <div class="shots"></div>
+        </div>
+        <div class="card rv" style="--i:5">
+          <div class="vis pay" style="--img:url(photos/projects/payroll.png)"></div><span class="num">03</span>
+          <h3>PAYROLL SYSTEM</h3><em>Payroll Management Application</em>
+          <p>Handles employee info, timekeeping and payroll.</p>
+          <ul class="detail"><li>Role: Assistant developer (freelance)</li><li>Built with: Python · PyQt5 · MySQL</li></ul>
+          <div class="shots"></div>
+        </div>
+        <div class="card rv" style="--i:6">
+          <div class="vis nav" style="--img:url(photos/projects/navplmun.png)"></div><span class="num">04</span>
+          <h3>NAVPLMUN</h3><em>Android Campus Navigation App</em>
+          <p>An Android app for finding your way around the PLMun campus.</p>
+          <ul class="detail"><li>Role: Full-stack developer</li><li>Built with: Java · Android Studio · SQLite</li></ul>
+          <div class="shots"></div>
+        </div>
+      </div>
+    </div>
+    <aside class="pdetail rv" style="--i:4" id="pdetail">
+      <div class="idle">Press → to open the first project<br>(details? just ask me!)</div>
+      <div class="body">
+        <small id="mstep"></small>
+        <div class="vis big" id="mvis"></div>
+        <em id="mtype"></em><h3 id="mtitle"></h3><p id="mdesc"></p>
+        <div id="mshots"></div><ul id="mlist"></ul>
+      </div>
+    </aside>
+  </div></section>
+
+  <!-- 04 Q3: TWO TRUTHS AND A LIE (one statement per Next, then the TRUE / LIE stamps slam down) -->
+  <section class="slide" id="s7"><div class="qa">
+    <div class="qside">
+      <span class="qtag rv">Q3</span>
+      <h2 class="question rv" style="--i:1">Two truths and a lie... can you spot the fake?</h2>
+      <p class="asker rv" style="--i:2">Guess first. I'll reveal the answer.</p>
+    </div>
+    <div class="lies">
+      <!-- EDIT: write your own statements. Each .lie = a letter + a sentence + a stamp (class "true" or "lie"). Keep data-step numbers. -->
+      <div class="lie sr" data-step="1"><span class="ltr">A</span><p>I'm a cat person</p><i class="stamp true sr" data-step="4">TRUE</i></div>
+      <div class="lie sr" data-step="2"><span class="ltr">B</span><p>I have a massive obsession with matcha and order it at almost every cafe I visit</p><i class="stamp fake sr" data-step="4">LIE</i></div>
+      <div class="lie sr" data-step="3"><span class="ltr">C</span><p>I enjoy capturing moments behind the lens</p><i class="stamp true sr" data-step="4">TRUE</i></div>
+    </div>
+  </div></section>
+
+  <!-- 05 Q4: PHOTOGRAPHY -->
+  <section class="slide" id="s5"><div class="qa stack">
+    <div>
+      <span class="qtag rv">Q4</span>
+      <h2 class="question sm rv" style="--i:1">Are you always on a computer?</h2>
+      <p class="answerline rv" style="--i:2">“Nope. I like taking photos of things people normally don't notice.”</p>
+    </div>
+    <div class="gallery-wrap rv" style="--i:3">
+      <div class="gallery">
+        <!-- ADD YOUR PHOTOS: copy a <figure> line and set style="--img:url(photos/ANY-NAME.jpg)". Any filename works.
+             Edit the caption. The --g gradient is only a placeholder. -->
+        <figure class="ph" style="--img:url(photos/photo1.jpg);--g:linear-gradient(135deg,#1b2a4a,#6ee7ff)"><figcaption>Where silence takes the lead</figcaption></figure>
+        <figure class="ph" style="--img:url(photos/photo2.jpg);--g:linear-gradient(135deg,#3b1d5a,#ff8fb1)"><figcaption>Pusa sa paligid ng DOST</figcaption></figure>
+        <figure class="ph" style="--img:url(photos/photo3.jpg);--g:linear-gradient(135deg,#0f3d3a,#a7f3d0)"><figcaption>Daan Palabas</figcaption></figure>
+        <figure class="ph" style="--img:url(photos/photo4.jpg);--g:linear-gradient(135deg,#4a2a1b,#fbbf24)"><figcaption>Midnight residents of BGC</figcaption></figure>
+        <figure class="ph" style="--img:url(photos/photo5.jpg);--g:linear-gradient(135deg,#1d1d3a,#a78bfa)"><figcaption>Sulyap</figcaption></figure>
+        <figure class="ph" style="--img:url(photos/photo6.jpg);--g:linear-gradient(135deg,#102a43,#7dd3fc)"><figcaption>Repleksyon</figcaption></figure>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- 06 Q5: PETS (warm colors, see #s6 in style.css) -->
+  <section class="slide" id="s6"><div class="qa stack">
+    <div>
+      <span class="qtag rv">Q5</span>
+      <h2 class="question sm rv" style="--i:1">Wait... do you have pets?</h2>
+      <p class="answerline rv" style="--i:2">“Yes. They run the house.”</p>
+    </div>
+    <div class="gallery-wrap rv" style="--i:3">
+      <div class="gallery">
+        <!-- ADD YOUR PET'S PHOTO HERE: copy a whole .pet block per pet (any number works). Change photo path, name, description, fun fact. -->
+        <div class="pet"><figure class="ph" style="--img:url(photos/pet1.jpg);--g:linear-gradient(135deg,#5a3a1d,#ffb86b)"><figcaption>Pet 1</figcaption></figure>
+          <h3>Tux</h3><p>Introvert</p><em></em></div>
+        <div class="pet"><figure class="ph" style="--img:url(photos/pet2.jpg);--g:linear-gradient(135deg,#5a1d3a,#ff8fb1)"><figcaption>Pet 2</figcaption></figure>
+          <h3>Olaf</h3><p>The Attitude One</p><em></em></div>
+        <div class="pet"><figure class="ph" style="--img:url(photos/pet3.jpg);--g:linear-gradient(135deg,#3a2a5a,#c4b5fd)"><figcaption>Pet 3</figcaption></figure>
+          <h3>Snow</h3><p>The Cute One</p><em></em></div>
+        <div class="pet"><figure class="ph" style="--img:url(photos/pet4.jpg);--g:linear-gradient(135deg,#1d4a3a,#86efac)"><figcaption>Pet 4</figcaption></figure>
+          <h3>Ash</h3><p>Unofficial boss</p><em>Fun fact: My Favorite and Extrovert</em></div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- 07 CLOSING -->
+  <section class="slide" id="s9">
+    <div class="portrait ghost"><img src="photos/profile.jpg" alt="" onerror="this.remove()"></div>
+    <p class="kicker rv">THAT'S THE SHORT VERSION</p>
+    <h1 class="huge rv" style="--i:1">YOUR TURN.<br>ASK ME ANYTHING.</h1>
+    <div class="askbox rv" style="--i:3">Type your question…<i class="caret"></i></div>
+    <p class="sub rv" style="--i:4">ASK ME ABOUT</p>
+    <!-- EDIT: topics you want people to ask about -->
+    <div class="chips rv" style="--i:4"><span>Favorite food</span><span>Status</span><span>ETC.</span></div>
+    <p class="sub rv" style="--i:5">And that's a little bit about me. I'm just a person trying to make life more interesting in every way possible · <br> Thank you and nice meeting you.</p>
+    <div class="endnav rv" style="--i:6"><button class="ghost" data-prev>← Previous</button><button class="ghost" data-restart>↻ Restart</button></div>
+  </section>
+</main>
+
+<!-- Game-style HUD (top-left) and level track with the walking pixel cat (bottom). Drawn by script.js. -->
+<div class="gamehud"><span id="hearts"></span><span id="stage">STAGE 01</span><span class="coinct"><span id="coinic"></span>×<b id="coins">0</b></span></div>
+<div id="track"></div>
+
+<nav class="dots" id="dots" aria-label="Slides"></nav>
+<div class="hud"><button id="prev" aria-label="Previous slide">←</button><span id="count">01 / 07</span><button id="next" aria-label="Next slide">→</button></div>
+<div class="hint">→ or left-click: next · ← or right-click: back</div>
+
+<script src="script.js"></script>
+</body>
+</html>
