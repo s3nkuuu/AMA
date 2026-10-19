@@ -339,3 +339,9 @@ canvas{image-rendering:pixelated}
 .stamp.sr.show{transform:rotate(-8deg) scale(1)}
 .stamp.true{background:#a7f3d0;color:#07080d}
 .stamp.fake{background:#ff5d7a;color:#fff}
+
+/* ======================= FREELANCE PHOTO SLIDE (4 photos in a grid) ======================= */
+#s3{--a:#fbbf24;--b:#6ee7ff}
+.gallery.four{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.1rem}
+.gallery.four .ph{flex:none;width:100%;height:clamp(160px,36vh,340px)}
+@media (max-width:900px){.gallery.four{grid-template-columns:repeat(2,minmax(0,1fr))}}

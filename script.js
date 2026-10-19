@@ -53,7 +53,7 @@ info[slides.indexOf($('#s4'))] = { count: plan.length, apply(st) {
 
 /* Photo + pet slides (#s5, #s6): each Next EXPANDS the next photo / pet into a big full-quality viewer (no clicking) */
 const photoUrl = el => { const m = /url\(["']?([^"')]+)/.exec(getComputedStyle(el).getPropertyValue('--img')); return m ? m[1] : ''; };
-['s5', 's6'].forEach(id => {
+['s3', 's5', 's6'].forEach(id => {
   const slide = $('#' + id), items = [...slide.querySelector('.gallery').children];
   const v = document.createElement('div'); v.className = 'viewer';
   v.innerHTML = '<div class="vframe"><img class="vimg" alt="" decoding="async"></div><div class="vcap"><small></small><h3></h3><p></p></div>';
